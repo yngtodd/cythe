@@ -32,8 +32,8 @@ class PyTest(TestCommand):
 extensions = [
     Extension(
         name='cythe.cython._cext',
-        sources=['cythe/cython/_cext.pyx', 'cythe/src/demo.c'],
-        include_dirs=['cythe/include/',  np.get_include()],
+        sources=['cythe/cython/_cext.pyx', 'src/demo.c'],
+        include_dirs=['include/',  np.get_include()],
         extra_compile_args=['--std=c99']
     )
 ]
