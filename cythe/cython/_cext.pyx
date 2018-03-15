@@ -21,5 +21,4 @@ def np_int32_add_wrap(np.ndarray x, np.ndarray y):
     cdef int32_t* out_ptr = <int32_t*> out.data
 
     np_int32_add(x_ptr, y_ptr, out_ptr, x.size)
-
-return out
+    return out
