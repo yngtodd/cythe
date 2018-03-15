@@ -1,3 +1,5 @@
+.. image:: img/deathscythe_space.gif
+
 =====
 CYTHE
 =====
