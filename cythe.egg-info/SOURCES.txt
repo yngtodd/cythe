@@ -1,9 +1,13 @@
 README.rst
 setup.py
+cythe/__init__.py
 cythe.egg-info/PKG-INFO
 cythe.egg-info/SOURCES.txt
 cythe.egg-info/dependency_links.txt
 cythe.egg-info/requires.txt
 cythe.egg-info/top_level.txt
+cythe/cython/__init__.py
 cythe/cython/_cext.c
+cythe/cython/cextcython.py
 src/demo.c
+test/test_cython.py
