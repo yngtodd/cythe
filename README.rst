@@ -1,4 +1,5 @@
 .. image:: img/deathscythe_space.gif
+   :align: "middle"
 
 =====
 CYTHE
