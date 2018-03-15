@@ -1,6 +1,3 @@
-.. image:: img/deathscythe_space.gif
-   :align: center 
-
 .. raw:: html
 
     <embed>
