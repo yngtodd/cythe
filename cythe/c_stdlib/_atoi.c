@@ -954,6 +954,7 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 /* Module declarations from 'libc.stdlib' */
 
 /* Module declarations from 'cythe.c_stdlib._atoi' */
+static PyObject *__pyx_f_5cythe_8c_stdlib_5_atoi_parse_charptr_to_py_int(char *, int __pyx_skip_dispatch); /*proto*/
 #define __Pyx_MODULE_NAME "cythe.c_stdlib._atoi"
 extern int __pyx_module_is_main_cythe__c_stdlib___atoi;
 int __pyx_module_is_main_cythe__c_stdlib___atoi = 0;
@@ -967,17 +968,19 @@ static PyObject *__pyx_kp_s_Byte_string_value_is_NULL;
 static PyObject *__pyx_n_s_cline_in_traceback;
 static PyObject *__pyx_n_s_main;
 static PyObject *__pyx_n_s_test;
+static PyObject *__pyx_pf_5cythe_8c_stdlib_5_atoi_parse_charptr_to_py_int(CYTHON_UNUSED PyObject *__pyx_self, char *__pyx_v_s); /* proto */
 /* Late includes */
 
 /* "cythe/c_stdlib/_atoi.pyx":4
  * 
  * 
- * cdef parse_charptr_to_py_int(char* s):             # <<<<<<<<<<<<<<
+ * cpdef parse_charptr_to_py_int(char* s):             # <<<<<<<<<<<<<<
  *     assert s is not NULL, "Byte string value is NULL."
  *     return atoi(s)
  */
 
-static PyObject *__pyx_f_5cythe_8c_stdlib_5_atoi_parse_charptr_to_py_int(char *__pyx_v_s) {
+static PyObject *__pyx_pw_5cythe_8c_stdlib_5_atoi_1parse_charptr_to_py_int(PyObject *__pyx_self, PyObject *__pyx_arg_s); /*proto*/
+static PyObject *__pyx_f_5cythe_8c_stdlib_5_atoi_parse_charptr_to_py_int(char *__pyx_v_s, CYTHON_UNUSED int __pyx_skip_dispatch) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -985,7 +988,7 @@ static PyObject *__pyx_f_5cythe_8c_stdlib_5_atoi_parse_charptr_to_py_int(char *_
 
   /* "cythe/c_stdlib/_atoi.pyx":5
  * 
- * cdef parse_charptr_to_py_int(char* s):
+ * cpdef parse_charptr_to_py_int(char* s):
  *     assert s is not NULL, "Byte string value is NULL."             # <<<<<<<<<<<<<<
  *     return atoi(s)
  */
@@ -999,7 +1002,7 @@ static PyObject *__pyx_f_5cythe_8c_stdlib_5_atoi_parse_charptr_to_py_int(char *_
   #endif
 
   /* "cythe/c_stdlib/_atoi.pyx":6
- * cdef parse_charptr_to_py_int(char* s):
+ * cpdef parse_charptr_to_py_int(char* s):
  *     assert s is not NULL, "Byte string value is NULL."
  *     return atoi(s)             # <<<<<<<<<<<<<<
  */
@@ -1013,7 +1016,7 @@ static PyObject *__pyx_f_5cythe_8c_stdlib_5_atoi_parse_charptr_to_py_int(char *_
   /* "cythe/c_stdlib/_atoi.pyx":4
  * 
  * 
- * cdef parse_charptr_to_py_int(char* s):             # <<<<<<<<<<<<<<
+ * cpdef parse_charptr_to_py_int(char* s):             # <<<<<<<<<<<<<<
  *     assert s is not NULL, "Byte string value is NULL."
  *     return atoi(s)
  */
@@ -1029,7 +1032,54 @@ static PyObject *__pyx_f_5cythe_8c_stdlib_5_atoi_parse_charptr_to_py_int(char *_
   return __pyx_r;
 }
 
+/* Python wrapper */
+static PyObject *__pyx_pw_5cythe_8c_stdlib_5_atoi_1parse_charptr_to_py_int(PyObject *__pyx_self, PyObject *__pyx_arg_s); /*proto*/
+static PyObject *__pyx_pw_5cythe_8c_stdlib_5_atoi_1parse_charptr_to_py_int(PyObject *__pyx_self, PyObject *__pyx_arg_s) {
+  char *__pyx_v_s;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("parse_charptr_to_py_int (wrapper)", 0);
+  assert(__pyx_arg_s); {
+    __pyx_v_s = __Pyx_PyObject_AsWritableString(__pyx_arg_s); if (unlikely((!__pyx_v_s) && PyErr_Occurred())) __PYX_ERR(0, 4, __pyx_L3_error)
+  }
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L3_error:;
+  __Pyx_AddTraceback("cythe.c_stdlib._atoi.parse_charptr_to_py_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_5cythe_8c_stdlib_5_atoi_parse_charptr_to_py_int(__pyx_self, ((char *)__pyx_v_s));
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_5cythe_8c_stdlib_5_atoi_parse_charptr_to_py_int(CYTHON_UNUSED PyObject *__pyx_self, char *__pyx_v_s) {
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  __Pyx_RefNannySetupContext("parse_charptr_to_py_int", 0);
+  __Pyx_XDECREF(__pyx_r);
+  __pyx_t_1 = __pyx_f_5cythe_8c_stdlib_5_atoi_parse_charptr_to_py_int(__pyx_v_s, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_r = __pyx_t_1;
+  __pyx_t_1 = 0;
+  goto __pyx_L0;
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_AddTraceback("cythe.c_stdlib._atoi.parse_charptr_to_py_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
 static PyMethodDef __pyx_methods[] = {
+  {"parse_charptr_to_py_int", (PyCFunction)__pyx_pw_5cythe_8c_stdlib_5_atoi_1parse_charptr_to_py_int, METH_O, 0},
   {0, 0, 0, 0}
 };
 
