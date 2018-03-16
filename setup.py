@@ -24,8 +24,6 @@ class PyTest(TestCommand):
         sys.exit(errno)
 
 
-# see args descriptions at
-# https://docs.python.org/3/distutils/apiref.html#distutils.core.Extension
 extensions = [
     Extension(
         name='cythe.c_addition._cext',
@@ -36,7 +34,6 @@ extensions = [
     Extension(
         name='cythe.cython_primes.primes',
         sources=['cythe/cython_primes/primes.pyx'],
-#        include_dirs=[np.get_include()]
     )
 ]
 
