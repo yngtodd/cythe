@@ -43,5 +43,5 @@ An example of a python function wrapping a C function can be found in cythe.c_ad
 Writing Cython
 --------------
 
-.. _cythe.c_addiion.cextcython.py: https://github.com/yngtodd/cythe/blob/master/cythe/c_addition/cextcython.py
+.. _cythe.c_addition.cextcython.py: https://github.com/yngtodd/cythe/blob/master/cythe/c_addition/cextcython.py 
 .. _src.demo.c: https://github.com/yngtodd/cythe/blob/master/src/demo.c 
