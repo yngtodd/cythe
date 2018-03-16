@@ -30,7 +30,7 @@ An example of a python function wrapping a C function can be found in cythe.c_ad
     """
     return _cext.scalar_int_add(x, y)
 
-:code:`scalar_int_add()` wraps a C function by the same name found in src.demo.c`_:
+:code:`scalar_int_add()` wraps a C function by the same name found in src.demo.c_:
 
 .. code-block:: c
     
@@ -44,4 +44,4 @@ Writing Cython
 --------------
 
 .. _cythe.c_addiion.cextcython.py: https://github.com/yngtodd/cythe/blob/master/cythe/c_addition/cextcython.py
-.. _demo.c: https://github.com/yngtodd/cythe/blob/master/src/demo.c 
+.. _src.demo.c: https://github.com/yngtodd/cythe/blob/master/src/demo.c 
