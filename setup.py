@@ -1,4 +1,4 @@
-imprt sys
+import sys
 import numpy as np
 from Cython.Build import cythonize
 from setuptools import find_packages, setup, Extension
@@ -36,6 +36,7 @@ extensions = [
     Extension(
         name='cythe.cython_primes.primes',
         sources=['cythe/cython_primes/primes.pyx'],
+#        include_dirs=[np.get_include()]
     )
 ]
 
