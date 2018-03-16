@@ -34,6 +34,10 @@ extensions = [
     Extension(
         name='cythe.cython_primes.primes',
         sources=['cythe/cython_primes/primes.pyx'],
+    ),
+    Extension(
+        name='cythe.c_stdlib._atoi',
+        sources=['cythe/c_stdlib/_atoi.pyx']
     )
 ]
 

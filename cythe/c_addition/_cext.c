@@ -5,22 +5,23 @@
     "distutils": {
         "depends": [
             "/Users/youngtodd/anaconda3/lib/python3.6/site-packages/numpy/core/include/numpy/arrayobject.h",
-            "/Users/youngtodd/anaconda3/lib/python3.6/site-packages/numpy/core/include/numpy/ufuncobject.h"
+            "/Users/youngtodd/anaconda3/lib/python3.6/site-packages/numpy/core/include/numpy/ufuncobject.h",
+            "include/demo.h"
         ],
         "extra_compile_args": [
             "--std=c99"
         ],
         "include_dirs": [
-            "src/",
+            "include/",
             "/Users/youngtodd/anaconda3/lib/python3.6/site-packages/numpy/core/include"
         ],
-        "name": "cythe.cython._cext",
+        "name": "cythe.c_addition._cext",
         "sources": [
-            "cythe/cython/_cext.pyx",
+            "cythe/c_addition/_cext.pyx",
             "src/demo.c"
         ]
     },
-    "module_name": "cythe.cython._cext"
+    "module_name": "cythe.c_addition._cext"
 }
 END: Cython Metadata */
 
@@ -582,8 +583,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__cythe__cython___cext
-#define __PYX_HAVE_API__cythe__cython___cext
+#define __PYX_HAVE__cythe__c_addition___cext
+#define __PYX_HAVE_API__cythe__c_addition___cext
 /* Early includes */
 #include <stdint.h>
 #include <string.h>
@@ -816,7 +817,7 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "cythe/cython/_cext.pyx",
+  "cythe/c_addition/_cext.pyx",
   "__init__.pxd",
   "stringsource",
   "type.pxd",
@@ -1578,14 +1579,14 @@ static PyTypeObject *__pyx_ptype_5numpy_ndarray = 0;
 static PyTypeObject *__pyx_ptype_5numpy_ufunc = 0;
 static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *, char *, char *, int *); /*proto*/
 
-/* Module declarations from 'cythe.cython._cext' */
+/* Module declarations from 'cythe.c_addition._cext' */
 static PyTypeObject *__pyx_ptype___pyx_scope_struct____Pyx_CFunc_int____int____int___to_py = 0;
 static PyObject *__Pyx_CFunc_int____int____int___to_py(int (*)(int, int)); /*proto*/
-#define __Pyx_MODULE_NAME "cythe.cython._cext"
-extern int __pyx_module_is_main_cythe__cython___cext;
-int __pyx_module_is_main_cythe__cython___cext = 0;
+#define __Pyx_MODULE_NAME "cythe.c_addition._cext"
+extern int __pyx_module_is_main_cythe__c_addition___cext;
+int __pyx_module_is_main_cythe__c_addition___cext = 0;
 
-/* Implementation of 'cythe.cython._cext' */
+/* Implementation of 'cythe.c_addition._cext' */
 static PyObject *__pyx_builtin_ValueError;
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_RuntimeError;
@@ -1614,8 +1615,8 @@ static const char __pyx_k_RuntimeError[] = "RuntimeError";
 static const char __pyx_k_stringsource[] = "stringsource";
 static const char __pyx_k_np_int32_add_wrap[] = "np_int32_add_wrap";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
-static const char __pyx_k_cythe_cython__cext[] = "cythe.cython._cext";
-static const char __pyx_k_cythe_cython__cext_pyx[] = "cythe/cython/_cext.pyx";
+static const char __pyx_k_cythe_c_addition__cext[] = "cythe.c_addition._cext";
+static const char __pyx_k_cythe_c_addition__cext_pyx[] = "cythe/c_addition/_cext.pyx";
 static const char __pyx_k_Pyx_CFunc_int____int____int[] = "__Pyx_CFunc_int____int____int___to_py.<locals>.wrap";
 static const char __pyx_k_ndarray_is_not_C_contiguous[] = "ndarray is not C contiguous";
 static const char __pyx_k_numpy_core_multiarray_failed_to[] = "numpy.core.multiarray failed to import";
@@ -1637,8 +1638,8 @@ static PyObject *__pyx_n_s_a;
 static PyObject *__pyx_n_s_b;
 static PyObject *__pyx_n_s_cfunc_to_py;
 static PyObject *__pyx_n_s_cline_in_traceback;
-static PyObject *__pyx_n_s_cythe_cython__cext;
-static PyObject *__pyx_kp_s_cythe_cython__cext_pyx;
+static PyObject *__pyx_n_s_cythe_c_addition__cext;
+static PyObject *__pyx_kp_s_cythe_c_addition__cext_pyx;
 static PyObject *__pyx_n_s_empty_like;
 static PyObject *__pyx_n_s_import;
 static PyObject *__pyx_n_s_main;
@@ -1661,7 +1662,7 @@ static PyObject *__pyx_n_s_x;
 static PyObject *__pyx_n_s_x_ptr;
 static PyObject *__pyx_n_s_y;
 static PyObject *__pyx_n_s_y_ptr;
-static PyObject *__pyx_pf_5cythe_6cython_5_cext_np_int32_add_wrap(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_x, PyArrayObject *__pyx_v_y); /* proto */
+static PyObject *__pyx_pf_5cythe_10c_addition_5_cext_np_int32_add_wrap(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_x, PyArrayObject *__pyx_v_y); /* proto */
 static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
 static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info); /* proto */
 static PyObject *__pyx_pf_11cfunc_dot_to_py_37__Pyx_CFunc_int____int____int___to_py_wrap(PyObject *__pyx_self, int __pyx_v_a, int __pyx_v_b); /* proto */
@@ -1681,7 +1682,7 @@ static PyObject *__pyx_codeobj__11;
 static PyObject *__pyx_codeobj__13;
 /* Late includes */
 
-/* "cythe/cython/_cext.pyx":16
+/* "cythe/c_addition/_cext.pyx":15
  * 
  * 
  * def np_int32_add_wrap(np.ndarray x, np.ndarray y):             # <<<<<<<<<<<<<<
@@ -1690,9 +1691,9 @@ static PyObject *__pyx_codeobj__13;
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5cythe_6cython_5_cext_1np_int32_add_wrap(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_5cythe_6cython_5_cext_1np_int32_add_wrap = {"np_int32_add_wrap", (PyCFunction)__pyx_pw_5cythe_6cython_5_cext_1np_int32_add_wrap, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5cythe_6cython_5_cext_1np_int32_add_wrap(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_5cythe_10c_addition_5_cext_1np_int32_add_wrap(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_5cythe_10c_addition_5_cext_1np_int32_add_wrap = {"np_int32_add_wrap", (PyCFunction)__pyx_pw_5cythe_10c_addition_5_cext_1np_int32_add_wrap, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_5cythe_10c_addition_5_cext_1np_int32_add_wrap(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_x = 0;
   PyArrayObject *__pyx_v_y = 0;
   PyObject *__pyx_r = 0;
@@ -1721,11 +1722,11 @@ static PyObject *__pyx_pw_5cythe_6cython_5_cext_1np_int32_add_wrap(PyObject *__p
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_y)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("np_int32_add_wrap", 1, 2, 2, 1); __PYX_ERR(0, 16, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("np_int32_add_wrap", 1, 2, 2, 1); __PYX_ERR(0, 15, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "np_int32_add_wrap") < 0)) __PYX_ERR(0, 16, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "np_int32_add_wrap") < 0)) __PYX_ERR(0, 15, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -1738,15 +1739,15 @@ static PyObject *__pyx_pw_5cythe_6cython_5_cext_1np_int32_add_wrap(PyObject *__p
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("np_int32_add_wrap", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 16, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("np_int32_add_wrap", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 15, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("cythe.cython._cext.np_int32_add_wrap", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cythe.c_addition._cext.np_int32_add_wrap", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_x), __pyx_ptype_5numpy_ndarray, 1, "x", 0))) __PYX_ERR(0, 16, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_y), __pyx_ptype_5numpy_ndarray, 1, "y", 0))) __PYX_ERR(0, 16, __pyx_L1_error)
-  __pyx_r = __pyx_pf_5cythe_6cython_5_cext_np_int32_add_wrap(__pyx_self, __pyx_v_x, __pyx_v_y);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_x), __pyx_ptype_5numpy_ndarray, 1, "x", 0))) __PYX_ERR(0, 15, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_y), __pyx_ptype_5numpy_ndarray, 1, "y", 0))) __PYX_ERR(0, 15, __pyx_L1_error)
+  __pyx_r = __pyx_pf_5cythe_10c_addition_5_cext_np_int32_add_wrap(__pyx_self, __pyx_v_x, __pyx_v_y);
 
   /* function exit code */
   goto __pyx_L0;
@@ -1757,7 +1758,7 @@ static PyObject *__pyx_pw_5cythe_6cython_5_cext_1np_int32_add_wrap(PyObject *__p
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5cythe_6cython_5_cext_np_int32_add_wrap(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_x, PyArrayObject *__pyx_v_y) {
+static PyObject *__pyx_pf_5cythe_10c_addition_5_cext_np_int32_add_wrap(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_x, PyArrayObject *__pyx_v_y) {
   int32_t *__pyx_v_x_ptr;
   int32_t *__pyx_v_y_ptr;
   PyArrayObject *__pyx_v_out = 0;
@@ -1771,7 +1772,7 @@ static PyObject *__pyx_pf_5cythe_6cython_5_cext_np_int32_add_wrap(CYTHON_UNUSED 
   int __pyx_t_5;
   __Pyx_RefNannySetupContext("np_int32_add_wrap", 0);
 
-  /* "cythe/cython/_cext.pyx":18
+  /* "cythe/c_addition/_cext.pyx":17
  * def np_int32_add_wrap(np.ndarray x, np.ndarray y):
  *     # x.data is a pointer to the array data in memory
  *     cdef int32_t* x_ptr = <int32_t*> x.data             # <<<<<<<<<<<<<<
@@ -1780,7 +1781,7 @@ static PyObject *__pyx_pf_5cythe_6cython_5_cext_np_int32_add_wrap(CYTHON_UNUSED 
  */
   __pyx_v_x_ptr = ((int32_t *)__pyx_v_x->data);
 
-  /* "cythe/cython/_cext.pyx":19
+  /* "cythe/c_addition/_cext.pyx":18
  *     # x.data is a pointer to the array data in memory
  *     cdef int32_t* x_ptr = <int32_t*> x.data
  *     cdef int32_t* y_ptr = <int32_t*> y.data             # <<<<<<<<<<<<<<
@@ -1789,16 +1790,16 @@ static PyObject *__pyx_pf_5cythe_6cython_5_cext_np_int32_add_wrap(CYTHON_UNUSED 
  */
   __pyx_v_y_ptr = ((int32_t *)__pyx_v_y->data);
 
-  /* "cythe/cython/_cext.pyx":20
+  /* "cythe/c_addition/_cext.pyx":19
  *     cdef int32_t* x_ptr = <int32_t*> x.data
  *     cdef int32_t* y_ptr = <int32_t*> y.data
  *     cdef np.ndarray out = np.empty_like(x)             # <<<<<<<<<<<<<<
  *     cdef int32_t* out_ptr = <int32_t*> out.data
  * 
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 20, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_empty_like); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 20, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_empty_like); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -1812,13 +1813,13 @@ static PyObject *__pyx_pf_5cythe_6cython_5_cext_np_int32_add_wrap(CYTHON_UNUSED 
     }
   }
   if (!__pyx_t_2) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, ((PyObject *)__pyx_v_x)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, ((PyObject *)__pyx_v_x)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_2, ((PyObject *)__pyx_v_x)};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_GOTREF(__pyx_t_1);
     } else
@@ -1826,29 +1827,29 @@ static PyObject *__pyx_pf_5cythe_6cython_5_cext_np_int32_add_wrap(CYTHON_UNUSED 
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_2, ((PyObject *)__pyx_v_x)};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_GOTREF(__pyx_t_1);
     } else
     #endif
     {
-      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 20, __pyx_L1_error)
+      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 19, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_GIVEREF(__pyx_t_2); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2); __pyx_t_2 = NULL;
       __Pyx_INCREF(((PyObject *)__pyx_v_x));
       __Pyx_GIVEREF(((PyObject *)__pyx_v_x));
       PyTuple_SET_ITEM(__pyx_t_4, 0+1, ((PyObject *)__pyx_v_x));
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 20, __pyx_L1_error)
+  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 19, __pyx_L1_error)
   __pyx_v_out = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "cythe/cython/_cext.pyx":21
+  /* "cythe/c_addition/_cext.pyx":20
  *     cdef int32_t* y_ptr = <int32_t*> y.data
  *     cdef np.ndarray out = np.empty_like(x)
  *     cdef int32_t* out_ptr = <int32_t*> out.data             # <<<<<<<<<<<<<<
@@ -1857,19 +1858,19 @@ static PyObject *__pyx_pf_5cythe_6cython_5_cext_np_int32_add_wrap(CYTHON_UNUSED 
  */
   __pyx_v_out_ptr = ((int32_t *)__pyx_v_out->data);
 
-  /* "cythe/cython/_cext.pyx":23
+  /* "cythe/c_addition/_cext.pyx":22
  *     cdef int32_t* out_ptr = <int32_t*> out.data
  * 
  *     np_int32_add(x_ptr, y_ptr, out_ptr, x.size)             # <<<<<<<<<<<<<<
  *     return out
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_x), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 23, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_x), __pyx_n_s_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 23, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   (void)(np_int32_add(__pyx_v_x_ptr, __pyx_v_y_ptr, __pyx_v_out_ptr, __pyx_t_5));
 
-  /* "cythe/cython/_cext.pyx":24
+  /* "cythe/c_addition/_cext.pyx":23
  * 
  *     np_int32_add(x_ptr, y_ptr, out_ptr, x.size)
  *     return out             # <<<<<<<<<<<<<<
@@ -1879,7 +1880,7 @@ static PyObject *__pyx_pf_5cythe_6cython_5_cext_np_int32_add_wrap(CYTHON_UNUSED 
   __pyx_r = ((PyObject *)__pyx_v_out);
   goto __pyx_L0;
 
-  /* "cythe/cython/_cext.pyx":16
+  /* "cythe/c_addition/_cext.pyx":15
  * 
  * 
  * def np_int32_add_wrap(np.ndarray x, np.ndarray y):             # <<<<<<<<<<<<<<
@@ -1893,7 +1894,7 @@ static PyObject *__pyx_pf_5cythe_6cython_5_cext_np_int32_add_wrap(CYTHON_UNUSED 
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("cythe.cython._cext.np_int32_add_wrap", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cythe.c_addition._cext.np_int32_add_wrap", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF((PyObject *)__pyx_v_out);
@@ -4576,7 +4577,7 @@ static void __pyx_tp_dealloc___pyx_scope_struct____Pyx_CFunc_int____int____int__
 
 static PyTypeObject __pyx_scope_struct____Pyx_CFunc_int____int____int___to_py = {
   PyVarObject_HEAD_INIT(0, 0)
-  "cythe.cython._cext.__pyx_scope_struct____Pyx_CFunc_int____int____int___to_py", /*tp_name*/
+  "cythe.c_addition._cext.__pyx_scope_struct____Pyx_CFunc_int____int____int___to_py", /*tp_name*/
   sizeof(struct __pyx_obj___pyx_scope_struct____Pyx_CFunc_int____int____int___to_py), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc___pyx_scope_struct____Pyx_CFunc_int____int____int___to_py, /*tp_dealloc*/
@@ -4680,8 +4681,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_b, __pyx_k_b, sizeof(__pyx_k_b), 0, 0, 1, 1},
   {&__pyx_n_s_cfunc_to_py, __pyx_k_cfunc_to_py, sizeof(__pyx_k_cfunc_to_py), 0, 0, 1, 1},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
-  {&__pyx_n_s_cythe_cython__cext, __pyx_k_cythe_cython__cext, sizeof(__pyx_k_cythe_cython__cext), 0, 0, 1, 1},
-  {&__pyx_kp_s_cythe_cython__cext_pyx, __pyx_k_cythe_cython__cext_pyx, sizeof(__pyx_k_cythe_cython__cext_pyx), 0, 0, 1, 0},
+  {&__pyx_n_s_cythe_c_addition__cext, __pyx_k_cythe_c_addition__cext, sizeof(__pyx_k_cythe_c_addition__cext), 0, 0, 1, 1},
+  {&__pyx_kp_s_cythe_c_addition__cext_pyx, __pyx_k_cythe_c_addition__cext_pyx, sizeof(__pyx_k_cythe_c_addition__cext_pyx), 0, 0, 1, 0},
   {&__pyx_n_s_empty_like, __pyx_k_empty_like, sizeof(__pyx_k_empty_like), 0, 0, 1, 1},
   {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
@@ -4829,17 +4830,17 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__10);
   __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_wrap, 65, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(2, 65, __pyx_L1_error)
 
-  /* "cythe/cython/_cext.pyx":16
+  /* "cythe/c_addition/_cext.pyx":15
  * 
  * 
  * def np_int32_add_wrap(np.ndarray x, np.ndarray y):             # <<<<<<<<<<<<<<
  *     # x.data is a pointer to the array data in memory
  *     cdef int32_t* x_ptr = <int32_t*> x.data
  */
-  __pyx_tuple__12 = PyTuple_Pack(6, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_x_ptr, __pyx_n_s_y_ptr, __pyx_n_s_out, __pyx_n_s_out_ptr); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 16, __pyx_L1_error)
+  __pyx_tuple__12 = PyTuple_Pack(6, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_x_ptr, __pyx_n_s_y_ptr, __pyx_n_s_out, __pyx_n_s_out_ptr); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
   __Pyx_GIVEREF(__pyx_tuple__12);
-  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cythe_cython__cext_pyx, __pyx_n_s_np_int32_add_wrap, 16, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 16, __pyx_L1_error)
+  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cythe_c_addition__cext_pyx, __pyx_n_s_np_int32_add_wrap, 15, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -5087,14 +5088,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_cythe__cython___cext) {
+  if (__pyx_module_is_main_cythe__c_addition___cext) {
     if (PyObject_SetAttrString(__pyx_m, "__name__", __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "cythe.cython._cext")) {
-      if (unlikely(PyDict_SetItemString(modules, "cythe.cython._cext", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "cythe.c_addition._cext")) {
+      if (unlikely(PyDict_SetItemString(modules, "cythe.c_addition._cext", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -5115,34 +5116,34 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "cythe/cython/_cext.pyx":5
+  /* "cythe/c_addition/_cext.pyx":4
  * from libc.stdint cimport int32_t
  * 
  * import numpy as np             # <<<<<<<<<<<<<<
  * cimport numpy as np
  * 
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 5, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "cythe/cython/_cext.pyx":16
+  /* "cythe/c_addition/_cext.pyx":15
  * 
  * 
  * def np_int32_add_wrap(np.ndarray x, np.ndarray y):             # <<<<<<<<<<<<<<
  *     # x.data is a pointer to the array data in memory
  *     cdef int32_t* x_ptr = <int32_t*> x.data
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_5cythe_6cython_5_cext_1np_int32_add_wrap, NULL, __pyx_n_s_cythe_cython__cext); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_5cythe_10c_addition_5_cext_1np_int32_add_wrap, NULL, __pyx_n_s_cythe_c_addition__cext); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np_int32_add_wrap, __pyx_t_1) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np_int32_add_wrap, __pyx_t_1) < 0) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "cythe/cython/_cext.pyx":1
+  /* "cythe/c_addition/_cext.pyx":1
  * """See Cython docs at http://docs.cython.org/"""             # <<<<<<<<<<<<<<
- * 
  * from libc.stdint cimport int32_t
+ * 
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5160,8 +5161,8 @@ if (!__Pyx_RefNanny) {
   /*--- Wrapped vars code ---*/
   {
     PyObject* wrapped = __Pyx_CFunc_int____int____int___to_py(scalar_int_add);
-    if (unlikely(!wrapped)) __PYX_ERR(0, 12, __pyx_L1_error)
-    if (PyObject_SetAttrString(__pyx_m, "scalar_int_add", wrapped) < 0) __PYX_ERR(0, 12, __pyx_L1_error);
+    if (unlikely(!wrapped)) __PYX_ERR(0, 11, __pyx_L1_error)
+    if (PyObject_SetAttrString(__pyx_m, "scalar_int_add", wrapped) < 0) __PYX_ERR(0, 11, __pyx_L1_error);
   }
 
   goto __pyx_L0;
@@ -5169,11 +5170,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_1);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init cythe.cython._cext", 0, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init cythe.c_addition._cext", 0, __pyx_lineno, __pyx_filename);
     }
     Py_DECREF(__pyx_m); __pyx_m = 0;
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init cythe.cython._cext");
+    PyErr_SetString(PyExc_ImportError, "init cythe.c_addition._cext");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

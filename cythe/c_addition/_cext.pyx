@@ -1,5 +1,4 @@
 """See Cython docs at http://docs.cython.org/"""
-
 from libc.stdint cimport int32_t
 
 import numpy as np
