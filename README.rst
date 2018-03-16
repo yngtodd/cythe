@@ -20,7 +20,7 @@ of C.
 Wrapping C
 ----------
 
-An example of a python function wrapping a C function can be found in :code:`cythe.c_addition.cextcython.py`_:
+An example of a python function wrapping a C function can be found in `cythe.c_addition.cextcython.py`_:
 
 .. code-block:: python 
 
