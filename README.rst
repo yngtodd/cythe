@@ -12,3 +12,23 @@ CYTHE
 -----
 
 Compiling a library with Cython extensions. Straight to the point.
+
+Cython is great for two reasons. One, you can wrap existing C code in Python so that it can be called from 
+your python libraries. An example can be found in `c_addition.cextcython.py`:
+
+.. code-block:: python 
+    def scalar_int_add(x, y):
+    """
+    Add two integers.
+    """
+    return _cext.scalar_int_add(x, y)
+
+`scalar_int_add` wraps a C function by the same name found in `src.demo.c`:
+
+.. code-block:: c
+    int scalar_int_add(int a, int b) {
+        int c;
+        c = a + b;
+        return c;
+    }
+
