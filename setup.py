@@ -46,6 +46,3 @@ setup(
     tests_require=['pytest >= 2.7.3'],
     cmdclass={'test': PyTest}
 )
-
-
-
