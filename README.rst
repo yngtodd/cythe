@@ -73,6 +73,41 @@ Cython code is very similar to Python, but where we statically type our variable
     return result
 
 
+Calling On the C Standard Library
+---------------------------------
+
+When it comes to the standard C library, Cython has already you covered. You can readily :code:`cimport` the
+functions you need. Check out the example calling C's :code:`atoi()` in atoi_pyx_:
+
+.. code-block:: python
+
+    from libc.stdlib cimport atoi
+
+
+    cpdef parse_charptr_to_py_int(char* s):
+    assert s is not NULL, "Byte string value is NULL."
+    return atoi(s)
+
+Making use of the of Cython's connection to C from Python can be seen in atoi_py_:
+
+.. code-block:: python
+
+   from cythe.c_stdlib import _atoi
+
+
+    def parse_charptr_to_py_int(s):
+        """
+        Convert string to int.
+    
+        Parameters:
+        ----------
+        * `s`: [str]
+            String to be converted to int.
+        """
+    return _atoi.parse_charptr_to_py_int(s)
+
 .. _cythe.c_addition.cextcython.py: https://github.com/yngtodd/cythe/blob/master/cythe/c_addition/cextcython.py 
 .. _src.demo.c: https://github.com/yngtodd/cythe/blob/master/src/demo.c 
 .. _primes.pyx: https://github.com/yngtodd/cythe/blob/master/cythe/cython_primes/primes.pyx
+.. _atoi.pyx: https://github.com/yngtodd/cythe/blob/master/cythe/c_stdlib/_atoi.pyx
+.. _atoi.py: https://github.com/yngtodd/cythe/blob/master/cythe/c_stdlib/atoi.py
