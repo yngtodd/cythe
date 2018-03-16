@@ -1,9 +1,6 @@
-#from distutils.core import setup, Extension
-from Cython.Build import cythonize
-
-import sys
-
+imprt sys
 import numpy as np
+from Cython.Build import cythonize
 from setuptools import find_packages, setup, Extension
 from setuptools.command.test import test as TestCommand
 
