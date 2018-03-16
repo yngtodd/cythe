@@ -11,7 +11,7 @@
 CYTHE
 -----
 
-Compiling a library with Cython extensions. Straight to the point.
+A simple example showing how to add Cython and C to your Python libraries.
 
 Cython is great for two reasons. One, you can wrap existing C code in Python so that it can be called from 
 your python libraries. Two, Cython is its own language. It has the feel of Python and runs close to the speed
