@@ -31,10 +31,14 @@ class PyTest(TestCommand):
 # https://docs.python.org/3/distutils/apiref.html#distutils.core.Extension
 extensions = [
     Extension(
-        name='cythe.cython._cext',
-        sources=['cythe/cython/_cext.pyx', 'src/demo.c'],
+        name='cythe.c_addition._cext',
+        sources=['cythe/c_addition/_cext.pyx', 'src/demo.c'],
         include_dirs=['include/',  np.get_include()],
         extra_compile_args=['--std=c99']
+    ),
+    Extension(
+        name='cythe.cython_primes.primes',
+        sources=['cythe/cython_primes/primes.pyx'],
     )
 ]
 
