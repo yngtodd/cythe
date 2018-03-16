@@ -24,7 +24,7 @@ your python libraries. An example can be found in :code:`cythe.c_addition.cextcy
     """
     return _cext.scalar_int_add(x, y)
 
-:code:`scalar_int_add` wraps a C function by the same name found in :code:`src.demo.c`:
+:code:`scalar_int_add()` wraps a C function by the same name found in :code:`src.demo.c`:
 
 .. code-block:: c
     
