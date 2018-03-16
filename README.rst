@@ -14,7 +14,13 @@ CYTHE
 Compiling a library with Cython extensions. Straight to the point.
 
 Cython is great for two reasons. One, you can wrap existing C code in Python so that it can be called from 
-your python libraries. An example can be found in :code:`cythe.c_addition.cextcython.py`:
+your python libraries. Two, Cython is its own language. It has the feel of Python and runs close to the speed
+of C. 
+
+Wrapping C
+----------
+
+An example of a python function wrapping a C function can be found in :code:`cythe.c_addition.cextcython.py`:
 
 .. code-block:: python 
 
@@ -34,3 +40,5 @@ your python libraries. An example can be found in :code:`cythe.c_addition.cextcy
         return c;
     }
 
+Writing Cython
+--------------
