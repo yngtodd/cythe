@@ -77,7 +77,7 @@ Calling On the C Standard Library
 ---------------------------------
 
 When it comes to the standard C library, Cython has already you covered. You can readily :code:`cimport` the
-functions you need. Check out the example calling C's :code:`atoi()` in atoi_pyx_:
+functions you need. Check out the example calling C's :code:`atoi()` in atoi.pyx_:
 
 .. code-block:: python
 
@@ -88,7 +88,7 @@ functions you need. Check out the example calling C's :code:`atoi()` in atoi_pyx
     assert s is not NULL, "Byte string value is NULL."
     return atoi(s)
 
-Making use of the of Cython's connection to C from Python can be seen in atoi_py_:
+Making use of the of Cython's connection to C from Python can be seen in atoi.py_:
 
 .. code-block:: python
 
