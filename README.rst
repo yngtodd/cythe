@@ -17,6 +17,7 @@ Cython is great for two reasons. One, you can wrap existing C code in Python so 
 your python libraries. An example can be found in `c_addition.cextcython.py`:
 
 .. code-block:: python 
+
     def scalar_int_add(x, y):
     """
     Add two integers.
@@ -26,6 +27,7 @@ your python libraries. An example can be found in `c_addition.cextcython.py`:
 `scalar_int_add` wraps a C function by the same name found in `src.demo.c`:
 
 .. code-block:: c
+    
     int scalar_int_add(int a, int b) {
         int c;
         c = a + b;
