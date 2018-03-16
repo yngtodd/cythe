@@ -48,8 +48,7 @@ Cython code is very similar to Python, but where we statically type our variable
 .. code-block:: python
 
     def primes(int kmax):
-    """
-    Find the first kmax primes.
+    """Find the first kmax primes.
     Parameters:
     ----------
     * `kmax`: [int]
