@@ -38,7 +38,10 @@ extensions = [
     Extension(
         name='cythe.c_stdlib._atoi',
         sources=['cythe/c_stdlib/_atoi.pyx']
-    )
+    ),
+    Extension('cythe.numpy.mul_numpyarry',
+        sources=['cythe/numpy/mul_numpyarry.pyx', 'src/mul_numpyarry.c'],
+        include_dirs=['include/', np.get_include()])
 ]
 
 setup(
