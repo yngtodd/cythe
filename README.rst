@@ -85,8 +85,8 @@ functions you need. Check out the example calling C's :code:`atoi()` in atoi.pyx
 
 
     cpdef parse_charptr_to_py_int(char* s):
-       assert s is not NULL, "Byte string value is NULL."
-       return atoi(s)
+        assert s is not NULL, "Byte string value is NULL."
+        return atoi(s)
 
 Making use of the of Cython's connection to C from Python can be seen in atoi.py_:
 
