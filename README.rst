@@ -25,10 +25,10 @@ An example of a python function wrapping a C function can be found in cythe.c_ad
 .. code-block:: python
 
     def scalar_int_add(x, y):
-    """
-    Add two integers.
-    """
-    return _cext.scalar_int_add(x, y)
+        """
+        Add two integers.
+        """
+        return _cext.scalar_int_add(x, y)
 
 :code:`scalar_int_add()` wraps a C function by the same name found in src.demo.c_:
 
@@ -48,29 +48,29 @@ Cython code is very similar to Python, but where we statically type our variable
 .. code-block:: python
 
     def primes(int kmax):
-    """Find the first kmax primes.
-    Parameters:
-    ----------
-    * `kmax`: [int]
-        Maximum number of primes to return.
-    """
-    cdef int n, k, i
-    cdef int p[1000]
-    result = []
-    if kmax > 1000:
-        kmax = 1000
-    k = 0
-    n = 2
-    while k < kmax:
-        i = 0
-        while i < k and n % p[i] != 0:
-            i = i + 1
-        if i == k:
-            p[k] = n
-            k = k + 1
-            result.append(n)
-        n = n + 1
-    return result
+        """Find the first kmax primes.
+        Parameters:
+        ----------
+        * `kmax`: [int]
+            Maximum number of primes to return.
+        """
+        cdef int n, k, i
+        cdef int p[1000]
+        result = []
+        if kmax > 1000:
+            kmax = 1000
+        k = 0
+        n = 2
+        while k < kmax:
+            i = 0
+            while i < k and n % p[i] != 0:
+                i = i + 1
+            if i == k:
+                p[k] = n
+                k = k + 1
+                result.append(n)
+            n = n + 1
+        return result
 
 
 Calling On the C Standard Library
@@ -104,7 +104,7 @@ Making use of the of Cython's connection to C from Python can be seen in atoi.py
         * `s`: [str]
             String to be converted to int.
         """
-    return _atoi.parse_charptr_to_py_int(s)
+        return _atoi.parse_charptr_to_py_int(s)
 
 
 Pointing to Numpy
