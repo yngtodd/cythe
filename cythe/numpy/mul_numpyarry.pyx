@@ -14,7 +14,7 @@ def multiply(np.ndarray[double, ndim=2, mode="c"] input not None, double value):
 
     Parameters:
     ----------
-    * `array: [np.ndarray, type=np.float64, shape=(2,)
+    * `array`: [np.ndarray, type=np.float64, shape=(m,n)
         Array to be multiplied.
  
     * `value`: [int or float]
