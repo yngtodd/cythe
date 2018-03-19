@@ -21,7 +21,6 @@ def multiply(np.ndarray[double, ndim=2, mode="c"] input not None, double value):
         Number to multiply eash element in the array by.
     """
     cdef int m, n
-
     m, n = input.shape[0], input.shape[1]
     c_multiply (&input[0,0], value, m, n)
     return None
